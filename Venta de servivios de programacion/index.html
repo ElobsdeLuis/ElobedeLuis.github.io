@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Desarrollo Web</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=ATj54UWIg7GAe3P3WCklgBQQL1sAtRwTiXgke2iMT1EhplZawS33jaQd9vG1EwtOQKYQYtph4Ya3Mu8-&currency=EUR"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="fotos/Favicon.png">
+
+</head>
+<body>
+    <div class="hero">
+        <h1>Contrata programadores</h1>
+        <p>Creo sitios web modernos y funcionales que impulsan tu negocio</p>
+    </div>
+    
+    <div class="services-grid">
+        <div class="service-card" onclick="openModal('landing')">
+            <img src="fotos/Landing Page Pro.webp" alt="Landing Page Pro" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Landing Page Pro</h2>
+                <p class="service-price">299€</p>
+                <ul class="features-list">
+                    <li>Diseño premium</li>
+                    <li>Animaciones</li>
+                    <li>SEO básico</li>
+                    <li>Entrega en 7 días</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="openModal('business')">
+            <img src="fotos/Web Corporativa.png" alt="Web Corporativa" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Web Corporativa</h2>
+                <p class="service-price">799€</p>
+                <ul class="features-list">
+                    <li>Hasta 5 páginas</li>
+                    <li>Panel de administración</li>
+                    <li>SEO avanzado</li>
+                    <li>Entrega en 3 semanas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="openModal('ecommerce')">
+            <img src="fotos/Tienda Profesional.png" alt="Tienda Online" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Tienda Profesional</h2>
+                <p class="service-price">1499€</p>
+                <ul class="features-list">
+                    <li>Catálogo de productos</li>
+                    <li>Pasarela de pago</li>
+                    <li>Gestión de inventario</li>
+                    <li>Entrega en 5 semanas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   <h1> 
+
+   </h1>
+    <div class="services-grid">
+        <!-- Landing Pages -->
+        <div class="service-card" onclick="openModal('landing_basic')">
+            <img src="fotos/Landing Page Básica.png" alt="Landing Page Básica" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Landing Page Básica</h2>
+                <p class="service-price">199€</p>
+                <ul class="features-list">
+                    <li>Diseño responsive</li>
+                    <li>1 página</li>
+                    <li>Formulario de contacto</li>
+                    <li>Entrega en 5 días</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Páginas Web -->
+        <div class="service-card" onclick="openModal('web_personal')">
+            <img src="fotos/Web Personal.png" alt="Web Personal" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Web Personal</h2>
+                <p class="service-price">349€</p>
+                <ul class="features-list">
+                    <li>3 páginas</li>
+                    <li>Blog básico</li>
+                    <li>Diseño personalizado</li>
+                    <li>Entrega en 10 días</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="openModal('web_portfolio')">
+            <img src="fotos/Portfolio Profesional.png" alt="Portfolio Profesional" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Portfolio Profesional</h2>
+                <p class="service-price">449€</p>
+                <ul class="features-list">
+                    <li>Galería de proyectos</li>
+                    <li>Sección de servicios</li>
+                    <li>Blog avanzado</li>
+                    <li>Entrega en 2 semanas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="openModal('web_business')">
+            <img src="fotos/Web Empresarial.png" alt="Web Empresarial" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Web Empresarial</h2>
+                <p class="service-price">799€</p>
+                <ul class="features-list">
+                    <li>5 páginas</li>
+                    <li>Panel admin</li>
+                    <li>SEO avanzado</li>
+                    <li>Entrega en 3 semanas</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- E-commerce -->
+        <div class="service-card" onclick="openModal('shop_basic')">
+            <img src="fotos/Tienda Básica.png" alt="Tienda Básica" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Tienda Básica</h2>
+                <p class="service-price">899€</p>
+                <ul class="features-list">
+                    <li>Hasta 50 productos</li>
+                    <li>PayPal integrado</li>
+                    <li>Panel básico</li>
+                    <li>Entrega en 3 semanas</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Servicios Adicionales -->
+        <div class="service-card" onclick="openModal('blog_setup')">
+            <img src="fotos/Blog Profesional.png" alt="Blog Profesional" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Blog Profesional</h2>
+                <p class="service-price">399€</p>
+                <ul class="features-list">
+                    <li>WordPress optimizado</li>
+                    <li>Diseño personalizado</li>
+                    <li>SEO básico</li>
+                    <li>Entrega en 2 semanas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="openModal('web_redesign')">
+            <img src="fotos/Rediseño Web.png" alt="Rediseño Web" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Rediseño Web</h2>
+                <p class="service-price">599€</p>
+                <ul class="features-list">
+                    <li>Diseño moderno</li>
+                    <li>Migración contenido</li>
+                    <li>Optimización</li>
+                    <li>Entrega en 2 semanas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="openModal('maintenance')">
+            <img src="fotos/Mantenimiento Mensual.png" alt="Mantenimiento Mensual" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Mantenimiento Mensual</h2>
+                <p class="service-price">99€/mes</p>
+                <ul class="features-list">
+                    <li>Actualizaciones</li>
+                    <li>Backups</li>
+                    <li>Soporte técnico</li>
+                    <li>Respuesta en 24h</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="openModal('seo_pack')">
+            <img src="fotos/Pack SEO.png" alt="Pack SEO" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Pack SEO</h2>
+                <p class="service-price">299€</p>
+                <ul class="features-list">
+                    <li>Optimización técnica</li>
+                    <li>Keywords research</li>
+                    <li>Meta descriptions</li>
+                    <li>Informe mensual</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card" onclick="openModal('speed_opt')">
+            <img src="fotos/Optimización Velocidad.png" alt="Optimización Velocidad" class="service-image">
+            <div class="service-content">
+                <h2 class="service-title">Optimización Velocidad</h2>
+                <p class="service-price">199€</p>
+                <ul class="features-list">
+                    <li>Caché avanzado</li>
+                    <li>Optimización imágenes</li>
+                    <li>Minificación código</li>
+                    <li>CDN setup</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de servicio -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeServiceModal()">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Modal de contacto -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeContactModal()">&times;</span>
+            <h2 class="modal-title">Completa tus datos antes de continuar</h2>
+            
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Nombre completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Teléfono" required>
+                </div>
+                
+                <div class="form-group">
+                    <textarea name="message" placeholder="Mensaje (opcional)" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Continuar al pago</button>
+            </form>
+            
+            <div id="loadingMessage" class="loading" style="display: none;">
+                Procesando tus datos...
+            </div>
+            
+            <div id="successMessage" class="success-message" style="display: none;">
+                ¡Datos recibidos! Redirigiendo al pago...
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de PayPal -->
+    <div id="paypalModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closePayPalModal()">&times;</span>
+            <h2 class="modal-title">Realizar pago</h2>
+            <div id="paypal-button-container"></div>
+        </div>
+    </div>
+
+    <!-- Formulario de presupuesto personalizado -->
+    <form action="https://formsubmit.co/luisperezpuerta2019@gmail.com" method="POST">
+        <h2>¿Necesitas algo personalizado?</h2>
+        <div class="input-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre" required>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            
+            <label for="number">Presupuesto estimado</label>
+            <input type="number" name="number" id="number" placeholder="Presupuesto estimado (€)" required>
+            
+            <label for="message">Describe tu proyecto</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Describe tu proyecto" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+</body>
+</html>
+    <script>
+const services = {
+    landing: {
+        title: "Landing Page Pro",
+        price: "299.00",
+        description: `
+            <h2>Landing Page Pro</h2>
+            <img src="fotos/Landing Page Pro.webp" alt="Landing Page Pro" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>Diseño premium personalizado</li>
+                <li>Animaciones y efectos visuales</li>
+                <li>Formulario avanzado multi-paso</li>
+                <li>SEO básico incluido</li>
+                <li>3 revisiones incluidas</li>
+                <li>Entrega en 7 días</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('landing')">
+                Contratar servicio
+            </button>
+        `
+    },
+    business: {
+        title: "Web Corporativa",
+        price: "799.00",
+        description: `
+            <h2>Web Corporativa</h2>
+            <img src="fotos/Web Corporativa.png" alt="Web Corporativa" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>Hasta 5 páginas personalizadas</li>
+                <li>Panel de administración completo</li>
+                <li>SEO avanzado</li>
+                <li>Diseño responsive premium</li>
+                <li>4 revisiones incluidas</li>
+                <li>Entrega en 3 semanas</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('business')">
+                Contratar servicio
+            </button>
+        `
+    },
+    ecommerce: {
+        title: "Tienda Profesional",
+        price: "1499.00",
+        description: `
+            <h2>Tienda Profesional</h2>
+            <img src="fotos/Tienda Profesional.png" alt="Tienda Profesional" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>Catálogo de productos ilimitado</li>
+                <li>Pasarela de pago segura</li>
+                <li>Gestión de inventario avanzada</li>
+                <li>Panel de administración completo</li>
+                <li>SEO y optimización</li>
+                <li>Entrega en 5 semanas</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('ecommerce')">
+                Contratar servicio
+            </button>
+        `
+    },
+    landing_basic: {
+        title: "Landing Page Básica",
+        price: "199.00",
+        description: `
+            <h2>Landing Page Básica</h2>
+            <img src="fotos/Landing Page Básica.png" alt="Landing Page Básica" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>Diseño responsive</li>
+                <li>1 página optimizada</li>
+                <li>Formulario de contacto básico</li>
+                <li>2 revisiones incluidas</li>
+                <li>Optimización básica</li>
+                <li>Entrega en 5 días</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('landing_basic')">
+                Contratar servicio
+            </button>
+        `
+    },
+    web_personal: {
+        title: "Web Personal",
+        price: "349.00",
+        description: `
+            <h2>Web Personal</h2>
+            <img src="fotos/Web Personal.png" alt="Web Personal" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>3 páginas personalizadas</li>
+                <li>Blog básico incluido</li>
+                <li>Diseño personalizado</li>
+                <li>Responsive design</li>
+                <li>2 revisiones incluidas</li>
+                <li>Entrega en 10 días</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('web_personal')">
+                Contratar servicio
+            </button>
+        `
+    },
+    web_portfolio: {
+        title: "Portfolio Profesional",
+        price: "449.00",
+        description: `
+            <h2>Portfolio Profesional</h2>
+            <img src="fotos/Portfolio Profesional.png" alt="Portfolio Profesional" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>Galería de proyectos avanzada</li>
+                <li>Sección de servicios personalizada</li>
+                <li>Blog avanzado</li>
+                <li>Diseño premium</li>
+                <li>3 revisiones incluidas</li>
+                <li>Entrega en 2 semanas</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('web_portfolio')">
+                Contratar servicio
+            </button>
+        `
+    },
+    web_business: {
+        title: "Web Empresarial",
+        price: "799.00",
+        description: `
+            <h2>Web Empresarial</h2>
+            <img src="fotos/Web Empresarial.png" alt="Web Empresarial" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>5 páginas completas</li>
+                <li>Panel de administración</li>
+                <li>SEO avanzado</li>
+                <li>Integración con redes sociales</li>
+                <li>4 revisiones incluidas</li>
+                <li>Entrega en 3 semanas</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('web_business')">
+                Contratar servicio
+            </button>
+        `
+    },
+    shop_basic: {
+        title: "Tienda Básica",
+        price: "899.00",
+        description: `
+            <h2>Tienda Básica</h2>
+            <img src="fotos/Tienda Básica.png" alt="Tienda Básica" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>Hasta 50 productos</li>
+                <li>Integración con PayPal</li>
+                <li>Panel de administración básico</li>
+                <li>Gestión de inventario</li>
+                <li>3 revisiones incluidas</li>
+                <li>Entrega en 3 semanas</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('shop_basic')">
+                Contratar servicio
+            </button>
+        `
+    },
+    blog_setup: {
+        title: "Blog Profesional",
+        price: "399.00",
+        description: `
+            <h2>Blog Profesional</h2>
+            <img src="fotos/Blog Profesional.png" alt="Blog Profesional" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>WordPress optimizado</li>
+                <li>Diseño personalizado</li>
+                <li>SEO básico incluido</li>
+                <li>Categorías y etiquetas</li>
+                <li>2 revisiones incluidas</li>
+                <li>Entrega en 2 semanas</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('blog_setup')">
+                Contratar servicio
+            </button>
+        `
+    },
+    web_redesign: {
+        title: "Rediseño Web",
+        price: "599.00",
+        description: `
+            <h2>Rediseño Web</h2>
+            <img src="fotos/Rediseño Web.png" alt="Rediseño Web" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>Diseño moderno completo</li>
+                <li>Migración de contenido</li>
+                <li>Optimización general</li>
+                <li>Mejoras de rendimiento</li>
+                <li>3 revisiones incluidas</li>
+                <li>Entrega en 2 semanas</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('web_redesign')">
+                Contratar servicio
+            </button>
+        `
+    },
+    maintenance: {
+        title: "Mantenimiento Mensual",
+        price: "99.00",
+        description: `
+            <h2>Mantenimiento Mensual</h2>
+            <img src="fotos/Mantenimiento Mensual.png" alt="Mantenimiento Mensual" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>Actualizaciones periódicas</li>
+                <li>Backups semanales</li>
+                <li>Soporte técnico 24/7</li>
+                <li>Monitorización constante</li>
+                <li>Informes mensuales</li>
+                <li>Respuesta en 24h</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('maintenance')">
+                Contratar servicio
+            </button>
+        `
+    },
+    seo_pack: {
+        title: "Pack SEO",
+        price: "299.00",
+        description: `
+            <h2>Pack SEO</h2>
+            <img src="fotos/Pack SEO.png" alt="Pack SEO" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>Optimización técnica completa</li>
+                <li>Investigación de keywords</li>
+                <li>Meta descriptions optimizadas</li>
+                <li>Análisis de competencia</li>
+                <li>Optimización de contenido</li>
+                <li>Informe mensual detallado</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('seo_pack')">
+                Contratar servicio
+            </button>
+        `
+    },
+    speed_opt: {
+        title: "Optimización Velocidad",
+        price: "199.00",
+        description: `
+            <h2>Optimización Velocidad</h2>
+            <img src="fotos/Optimización Velocidad.png" alt="Optimización Velocidad" style="width:100%;max-width:400px;display:block;margin:20px auto;">
+            <h3>Características:</h3>
+            <ul class="features-list">
+                <li>Configuración de caché avanzada</li>
+                <li>Optimización de imágenes</li>
+                <li>Minificación de código</li>
+                <li>Configuración de CDN</li>
+                <li>Mejoras de rendimiento</li>
+                <li>Informe comparativo</li>
+            </ul>
+            <button class="payment-button" onclick="startPaymentProcess('speed_opt')">
+                Contratar servicio
+            </button>
+        `
+    }
+};
+
+function createServiceCards() {
+            const servicesGrid = document.querySelector('.services-grid');
+            servicesGrid.innerHTML = '';
+
+            Object.entries(services).forEach(([id, service]) => {
+                const card = document.createElement('div');
+                card.className = 'service-card';
+                card.onclick = () => openModal(id);
+                
+                card.innerHTML = `
+                    <img src="/api/placeholder/400/320" alt="${service.title}" class="service-image">
+                    <div class="service-content">
+                        <h2 class="service-title">${service.title}</h2>
+                        <p class="service-price">${service.price}€</p>
+                        <ul class="features-list">
+                            ${service.description.match(/<li>(.+?)<\/li>/g).slice(0, 4).join('')}
+                        </ul>
+                    </div>
+                `;
+                
+                servicesGrid.appendChild(card);
+            });
+        }
+
+        let currentService = null;
+
+        function openModal(serviceId) {
+            currentService = serviceId;
+            const service = services[serviceId];
+            
+            const modal = document.getElementById('service-modal');
+            const content = document.getElementById('modal-content');
+            
+            content.innerHTML = service.description;
+            modal.style.display = 'block';
+        }
+
+        function closeServiceModal() {
+            document.getElementById('service-modal').style.display = 'none';
+        }
+
+        function startPaymentProcess(serviceId) {
+            closeServiceModal();
+            currentService = serviceId;
+            document.getElementById('contactModal').style.display = 'flex';
+        }
+
+        function closeContactModal() {
+            document.getElementById('contactModal').style.display = 'none';
+            document.getElementById('contactForm').style.display = 'block';
+            document.getElementById('loadingMessage').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'none';
+        }
+
+        function closePayPalModal() {
+            document.getElementById('paypalModal').style.display = 'none';
+            currentService = null;
+        }
+
+        function initializePayPalPayment() {
+            const service = services[currentService];
+            if (!service) return;
+            
+            document.getElementById('contactModal').style.display = 'none';
+            document.getElementById('paypalModal').style.display = 'flex';
+            
+            const paypalContainer = document.getElementById('paypal-button-container');
+            paypalContainer.innerHTML = '';
+            
+            paypal.Buttons({
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: service.price,
+                                currency_code: 'EUR'
+                            },
+                            description: service.title
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        alert('¡Pago completado! Nos pondremos en contacto contigo pronto.');
+                        closePayPalModal();
+                    });
+                },
+                onError: function(err) {
+                    console.error('Error en el pago:', err);
+                    alert('Ha ocurrido un error en el proceso de pago. Por favor, inténtalo de nuevo.');
+                    closePayPalModal();
+                }
+            }).render('#paypal-button-container');
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            this.style.display = 'none';
+            document.getElementById('loadingMessage').style.display = 'block';
+            
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                message: formData.get('message')
+            };
+
+            fetch('https://formspree.io/f/mbllpney', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('loadingMessage').style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+                
+                setTimeout(initializePayPalPayment, 1000);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('loadingMessage').style.display = 'none';
+                document.getElementById('contactForm').style.display = 'block';
+                alert('Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.');
+            });
+        });
+
+        // Cierre de modales al hacer clic fuera
+        window.onclick = function(event) {
+            const contactModal = document.getElementById('contactModal');
+            const serviceModal = document.getElementById('service-modal');
+            const paypalModal = document.getElementById('paypalModal');
+            
+            if (event.target === contactModal) {
+                closeContactModal();
+            }
+            if (event.target === serviceModal) {
+                closeServiceModal();
+            }
+            if (event.target === paypalModal) {
+                closePayPalModal();
+            }
+        }
+
+        // Inicializar las tarjetas de servicios al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            createServiceCards();
+        });
+</script>
+</body>
+</html>
